@@ -1,0 +1,41 @@
+<table class="work-planner margin-bottom-l" *ngIf="employeeData && eventData">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td *ngFor="let event of eventData">{{event.weekday}}</td>
+    </tr>
+    <tr *ngFor="let employee of employeeData">
+        <td colspan=3>{{employee.name}}</td>
+        <td *ngFor="let event of eventData"
+            (click)="toggleCell(event, employee)"
+            [class.work-planner--cell__preferred]="isEmployeeWorkingOnDay(event.id, employee.preferredDays)"
+            [class.work-planner--cell__restricted]="isEmployeeWorkingOnDay(event.id, employee.restrictedDays)"
+            [class.work-planner--cell__unpreferred]="isEmployeeWorkingOnDay(event.id, employee.unpreferredDays)"
+            [class.work-planner--cell__selected]="isEmployeeWorkingOnDay(event.id, employee.assignedDays)">
+        </td>
+    </tr>
+
+</table>
+
+
+
+
+<div class="info-board">
+
+    <div class="info-board--instructions">
+        <h3>Instructions.</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+
+    <div class="info-board--scores">
+        <p>Score: {{score.total}}</p>
+        <p>Preferred Day Bonus: {{score.preferredBonus}}</p>
+        <p>Unpreferred Day Violation: {{score.unpreferredViolation}}</p>
+        <p>Overworking Violation: {{score.overworkingViolation}} </p>
+
+    </div>
+
+
+
+</div>

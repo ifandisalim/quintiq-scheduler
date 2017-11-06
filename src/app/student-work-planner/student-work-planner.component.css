@@ -1,0 +1,144 @@
+.work-planner{
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
+    padding: 8px 5px;
+    border-collapse: separate;
+    border-spacing: 3px;
+   
+}
+
+.work-planner:before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, #85C2F7,#96CEAF, #A1D588);
+    height: 4px;
+    top:-1px;
+    left: -1px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.work-planner tr:first-child{
+    font-size: 0.65em;
+} 
+
+
+.work-planner td{
+    padding:5px;
+    position: relative;
+}
+
+
+.work-planner tr:nth-child(2) td:first-child{
+    background-color: #D2D3E9;
+} 
+
+.work-planner tr:nth-child(3) td:first-child{
+    background-color: #D2DFE9;
+} 
+
+.work-planner tr:nth-child(4) td:first-child{
+    background-color: #D2E9DB;
+} 
+
+.work-planner tr:nth-child(5) td:first-child{
+    background-color: #E9E2D2;
+} 
+
+.work-planner tr:nth-child(6) td:first-child{
+    background-color: #E9D2D2;
+} 
+
+.work-planner tr td:first-child{
+    text-align: right;
+    font-size: 1em;
+    font-family: 'AvenirNextRegular';
+}
+
+.work-planner tr:first-child td{
+    padding-top: 10px;
+}
+
+
+.work-planner tr:not(:first-child) td:not(:first-child){
+    background-color: #F2F2F3;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+.work-planner td.work-planner--cell__preferred{
+    background-color: #E7F2DB !important;
+}
+
+.work-planner td.work-planner--cell__unpreferred{
+    background-color: #CFD8DC !important;
+}
+
+.work-planner td.work-planner--cell__restricted{
+    background: repeating-linear-gradient(
+            45deg,
+            #ef5350,
+            #ef5350 1px,
+            #fff 2px,
+            #fff 4px
+    );
+
+}
+
+
+.work-planner td.work-planner--cell__selected:after{
+    font-family: FontAwesome;
+    content: "\f0b1";
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.work-planner td.work-planner--cell__selected.work-planner--cell__unpreferred:after{
+    color: white;
+}
+
+.info-board{
+    max-width: 100%;
+    background-color: #FFF;
+    position: relative;
+    padding: 15px 30px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
+    font-size: 0.9rem;
+
+}
+
+.info-board:before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right,#D49DF6, #BACBE4, #ADE2DC);
+    height: 4px;
+    top:-1px;
+    left: -1px;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.info-board--instructions{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.info-board p {
+    margin-bottom: 0.8rem;
+}

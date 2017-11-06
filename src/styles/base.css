@@ -1,0 +1,55 @@
+
+/**
+* Application Fonts
+*/
+@font-face {
+    font-family: 'AvenirNextRegular';
+    src: url('../assets/fonts/AvenirNextLTPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'AvenirNextBold';
+    src: url('../assets/fonts/AvenirNextLTPro-BoldCn.otf');
+}
+
+@font-face {
+    font-family: 'AvenirNextLight';
+    src: url('../assets/fonts/AvenirNextLTPro-UltLtCn.otf');
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'AvenirNextRegular';
+}
+
+.text-light{
+    font-family: 'AvenirNextLight' !important;
+}
+
+.text-heavy{
+    font-family: 'AvenirNextBold' !important;
+}
+
+
+html{
+
+}
+
+body{
+    color: #8485A0;
+    background-color: #E9F1F9;
+
+
+}
+
+html,
+body,
+app-root{
+    height: 100%;
+}
+
+app-root{
+    display: flex;
+    flex-direction: column;
+}

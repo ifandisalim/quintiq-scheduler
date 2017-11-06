@@ -1,0 +1,25 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 2px #96A3CF;
+}
+
+
+
+.header--logo,
+.header--logo > img{
+    height: 100%;
+    width: 105px;
+}
+
+
+.header--content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    background: linear-gradient(to right, #5D6AAE,#70A2D8);
+    padding: 15px;
+}

@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<app-header (restartButtonClicked)="invokeProgressRestart()"
+            (autoScheduleButtonClicked)="invokeAutoSchedule()">
+
+</app-header>
+
+<div class="content">
+
+  <aside class="content--aside">
+    <app-sidemenu></app-sidemenu>
+  </aside>
+
+  <div class="content--main">
+
+    <h1>Schedule Planning</h1>
+    <div>
+        <student-work-planner [employeeData]="employeeDetails"
+                              [eventData]="eventDetails">
+
+        </student-work-planner>
+    </div>
+
+  </div>
+</div>
+

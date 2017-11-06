@@ -1,0 +1,25 @@
+a:not([href]):not([tabindex]).btn,
+.btn{
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+a:not([href]):not([tabindex]).btn:hover,
+.btn:hover{
+    background-color: inherit;
+}
+
+a:not([href]):not([tabindex]).btn__outline,
+.btn:hover{
+    background-color: transparent;
+}
+
+a:not([href]):not([tabindex]).btn__white,
+.btn__white{
+    color: white;
+}
+
+a:not([href]):not([tabindex]).btn__unselected,
+.btn__unselected{
+    color: #CACFD6;
+}

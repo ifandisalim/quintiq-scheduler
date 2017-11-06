@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "weekday": "mon",
+    "week": 1
+  },
+  {
+    "id": 2,
+    "weekday": "tue",
+    "week": 1
+  },
+  {
+    "id": 3,
+    "weekday": "wed",
+    "week": 1
+  },
+  {
+    "id": 4,
+    "weekday": "thu",
+    "week": 1
+  },
+  {
+    "id": 5,
+    "weekday": "fri",
+    "week": 1
+  },
+  {
+    "id": 6,
+    "weekday": "sat",
+    "week": 1
+  },
+  {
+    "id": 7,
+    "weekday": "sun",
+    "week": 1
+  },
+  {
+    "id": 8,
+    "weekday": "mon",
+    "week": 2
+  },
+  {
+    "id": 9,
+    "weekday": "tue",
+    "week": 2
+  },
+  {
+    "id": 10,
+    "weekday": "wed",
+    "week": 2
+  },
+  {
+    "id": 11,
+    "weekday": "thu",
+    "week": 2
+  },
+  {
+    "id": 12,
+    "weekday": "fri",
+    "week": 2
+  },
+  {
+    "id": 13,
+    "weekday": "sat",
+    "week": 2
+  },
+  {
+    "id": 14,
+    "weekday": "sun",
+    "week": 2
+  }
+]
